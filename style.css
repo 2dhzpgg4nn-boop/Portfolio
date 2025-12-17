@@ -1,0 +1,6 @@
+@charset 'UTF-8';
+h1{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
