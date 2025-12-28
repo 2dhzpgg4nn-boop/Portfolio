@@ -1,0 +1,220 @@
+@charset 'UTF-8';
+/**{
+    outline: 1px solid red !important;
+}*/
+body{
+    text-align: center;
+    height: 100%;
+    background-image: url('background.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Noto Selif JP", serif;
+}
+h1{
+    font-size: 40px;
+    margin: 20px;
+}
+h2,p{
+    text-align: left;
+    padding-left: 20px;
+}
+h2{
+    padding-left: 100px;
+    padding-top: 10px;
+    font-size: 40px;
+}
+.translation_career{
+    padding-left: 150px;
+    margin-bottom: -30px;
+    font-size: 20px;
+}
+.translation-strength{
+    padding-left: 170px;
+    margin-bottom: -30px;
+    font-size: 20px;
+}
+.translation-studying{
+    padding-left: 210px;
+    margin-bottom: -22px;
+    font-size: 20px;
+}
+[class*="_item"]{
+    color: aliceblue;
+    background-color: #333333;
+    border-radius: 100px;
+    padding-bottom: 30px;
+    margin: 0 30px 50px;
+}
+.Math, .Python, .Front-end, .IT-passport{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #CCCCCC;
+    color: black;
+    border-radius: 20px;
+    margin: 50px;
+}
+.Math{
+    margin-top: 10px;
+}
+img{
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    height: 90vh;
+    width: auto;
+    filter: saturate(0.3);
+    max-width: 100%;
+    border-radius: 16px;
+}
+h3{
+    font-size: 40px;
+}
+
+.h3-p h3{
+    margin-bottom: 20px;
+}
+.h3-p p{
+    margin: 0 ;
+    padding: 0 60px;
+    font-size: 20px;
+    text-align: left;
+}
+.studying_img{
+    margin-top: 10px;
+
+}
+.drive_record{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px 40px;
+    gap: 40px;
+}
+.drive_img{
+    height: auto;
+}
+.Career{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.Career_text h3{
+    text-align: left;
+    padding-left: 30px;
+    margin-top: -15px;
+}
+.furigana{
+    font-size: 20px;
+    margin-left: 35px;
+    padding-left: 0;
+}
+.main_text{
+    font-size: 20px;
+    margin: 0 30px;
+    padding-left: 0;
+}
+
+.portrait_img{
+    width: 250px;
+    max-width: 250px;
+    height: auto;
+    margin-left: 10%;
+    border-radius: 16px;
+}
+.Strengths{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 10px 50px 20px; 
+}
+.Strengths h3{
+    font-size: 30px;
+    margin: 30px 0 10px;
+}
+.Strengths img{
+    aspect-ratio: 4/3 ;
+    object-fit: contain ;
+    width: 20vw;
+    height: auto;
+    margin: 30px 0;
+}
+.Strengths p{
+    margin: 0 20px 50px;
+}
+[class*="_st"]{
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+}
+@media screen and (max-width: 1024px) {
+.Career{
+    display: block;
+}
+.portrait_img{
+    margin-inline: auto;
+}
+.Strengths{
+    grid-template-columns: 1fr;
+}
+#thinking_img, #action_img, #growth_img{
+    width: 200px;
+}
+.Math{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+.Python{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.Front-end{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+.IT-passport{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.drive_record{
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media screen and (max-width: 480px){
+h2, #name{
+    text-align: center;
+    font-size: 30px;
+    padding-left: 0;
+}
+h3{
+    font-size: 30px;
+}
+.h3-p p{
+    padding: 0;
+    font-size: 15px;
+}
+.main_text{
+    font-size: 15px;
+}
+[class*="_item"]{
+    margin: 0 15px 30px;
+}
+.Strengths{
+    margin: 20px 15px;
+}
+.Math, .Python, .Front-end, .IT-passport{
+    margin: 20px 15px;
+}
+.furigana, .translation_career, .translation-strength, .translation-studying{
+    margin-left: 0;
+    text-align: center;
+    padding-left: 0;
+}
+.Studying_img{
+    width: 70vw;
+    height: auto;
+}
+}
